@@ -24,6 +24,7 @@ def run_single_sysbench(duration, report_interval, output_queue, process_number,
         "--threads=1",
         f"--time={duration}",
         f"--report-interval={report_interval}",
+        "--cpu-max-prime=50000",
         "run"
     ]
     
