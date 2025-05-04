@@ -28,7 +28,7 @@ def run_single_sysbench(duration, report_interval, output_queue, process_number,
     ]
     
     print(f"process {process_number} starting")
-    output_queue.put(f"process {process_number} starting")
+    output_queue.put(f"process starting")
 
     try:
 
@@ -44,7 +44,7 @@ def run_single_sysbench(duration, report_interval, output_queue, process_number,
 
         if process.stdout:
             for line in iter(process.stdout.readline, ''):
-                print(line)
+                print(line,end='')
                 output_queue.put(str(process_number) + ': ' + line)
         else:
              output_queue.put(f"{process_number} Error")
@@ -66,16 +66,16 @@ def log_writer(output_queue, log_file_path):
     try:
         with open(log_file_path, "w", encoding="utf-8") as log_f:
             
-            log_f.write(f"~~~--- Starting CPU Test Log file ---~~~\n")
+            log_f.write(f"--- Starting CPU Test Log file ---\n")
             log_f.write(f"Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
-            log_f.write("-" * 10,'\n')
+            log_f.write("-" * 10 + '\n')
             while True:
                 try:
                     # Получаем сообщение из очереди
                     line = output_queue.get(timeout=1)
                     
                     if line is None:  # Сигнал для завершения
-                        log_f.write("-" * 20)
+                        log_f.write("-" * 20 + '\n')
                         log_f.write(f"--- End Sysbench CPU Test Log ---")
                         break
                     
