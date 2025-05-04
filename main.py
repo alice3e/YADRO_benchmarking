@@ -28,20 +28,33 @@ def run_single_sysbench(duration, report_interval, output_queue, process_number,
         "run"
     ]
     
-    print(f"process {process_number} starting")
+    # пробуем поставить бенчмарку максимальный приоритет
+    # ROOT ОБЯЗАТЕЛЕН!
+    nice_command = list(command) 
+    if os.name == 'posix':
+        nice_path = shutil.which('nice') 
+        if nice_path:
+            nice_command = [nice_path, '-n', '-20'] + nice_command
+            print("attempting nice -20, requires root")
+        else:
+            print("nice not found", file=sys.stderr)
+    else:
+        print("not UNIX", file=sys.stderr)
+    
+    print(f"process {process_number} starting, command - {nice_command}")
     output_queue.put(f"process starting")
 
     try:
 
         process = subprocess.Popen(
-            command,
+            nice_command,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             text=True,
             bufsize=1,
             universal_newlines=True
         )
-
+        
 
         if process.stdout:
             for line in iter(process.stdout.readline, ''):
@@ -118,10 +131,6 @@ def main():
         default=DEFAULT_LOG_FILE,
         help="Path to the log file for intermediate results."
     )
-    parser.add_argument(
-        "--graph",
-        action="store_true", 
-    )
 
     args = parser.parse_args()
     
@@ -161,28 +170,23 @@ def main():
 
         time.sleep(0.05)
 
-    # Ждем завершения всех процессов sysbench
+    # Ждем завершения sysbench 
     for process in processes:
         process.join()
 
-    # Сигнализируем потоку логгера, что пора завершаться
+
     output_queue.put(None)
-    log_thread.join() # Ждем, пока логгер допишет все из очереди
+    log_thread.join() 
 
     end_time = time.time()
     print("-" * 40)
-    print(f"All {args.num_threads} sysbench instances finished.")
-    print(f"Total execution time: {end_time - start_time:.2f} seconds.")
+    print(f"All {args.num_threads} sysbenches finished.")
+    print(f"Total execution time: {end_time - start_time:.2f} seconds")
     print(f"Log file created at: {os.path.abspath(args.log_file)}")
-
-    if args.graph:
-        print("Graphing functionality is not implemented in this version.")
-        # Сюда можно будет добавить вызов функции для построения графика
-        # на основе данных из args.log_file
 
 
 if __name__ == "__main__":
     main()
     
-    # ./main.py --num-threads=3 --time=60
-    # ./main.py --num-threads=1 --time=600
+    # sudo ./main.py --num-threads=3 --time=60
+    # sudo ./main.py --num-threads=1 --time=600
