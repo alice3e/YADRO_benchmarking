@@ -15,8 +15,32 @@ DEFAULT_REPORT_INTERVAL = 5
 DEFAULT_LOG_FILE = "sysbench_cpu_report.log"
 PATH_TO_SYSBENCH = None
 
-def log_writer():
-    pass
+
+# функция для записи логов из очереди в файл
+def log_writer(output_queue, log_file_path):
+    try:
+        with open(log_file_path, "w", encoding="utf-8") as log_f:
+            
+            log_f.write(f"~~~--- Starting CPU Test Log file ---~~~")
+            log_f.write(f"Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}")
+            log_f.write("-" * 10)
+            while True:
+                try:
+                    # Получаем сообщение из очереди
+                    line = output_queue.get(timeout=1)
+                    
+                    if line is None:  # Сигнал для завершения
+                        log_f.write("-" * 20)
+                        log_f.write(f"--- End Sysbench CPU Test Log ---")
+                        break
+                    
+                    log_f.write(line)
+                    log_f.flush()
+                except queue.Empty:
+                    continue
+    except Exception as e:
+        print(f"Error writing to log file {log_file_path}: {e}", file=sys.stderr)
+
 
 def main():
     
@@ -76,6 +100,7 @@ def main():
     # поток для записи логов
     log_thread = threading.Thread(target=log_writer, args=(output_queue, args.log_file))
     log_thread.start()
+
 
 if __name__ == "__main__":
     main()
