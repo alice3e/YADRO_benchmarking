@@ -1,4 +1,5 @@
 # Тестирование CPU с помощью Sysbench
+## [ПОЛНЫЙ ОТЧЕТ СМОТРИТЕ ТУТ](https://github.com/alice3e/YADRO_benchmarking/blob/main/docs/report.md)
 
 Программа написана в качестве тестового задания в Yadro Импульс 2025, позиция Сис. Админ
 ![img](https://edu.yadro.com/static/images/impulse/logo.svg)
