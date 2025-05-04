@@ -13,12 +13,52 @@ import os
 
 DEFAULT_REPORT_INTERVAL = 5
 DEFAULT_LOG_FILE = "sysbench_cpu_report.log"
-PATH_TO_SYSBENCH = None
 
-# функция для выполнения одного sysbench
-def run_single_sysbench(duration, report_interval, output_queue, sysbench_num):
-    print(PATH_TO_SYSBENCH)
+# функция для выполнения одного экземпляра sysbench 
+def run_single_sysbench(duration, report_interval, output_queue, process_number, PATH_TO_SYSBENCH):
     
+    print(PATH_TO_SYSBENCH)
+    command = [
+        PATH_TO_SYSBENCH,
+        "cpu",
+        "--threads=1",
+        f"--time={duration}",
+        f"--report-interval={report_interval}",
+        "run"
+    ]
+    
+    print(f"process {process_number} starting")
+    output_queue.put(f"process {process_number} starting")
+
+    try:
+
+        process = subprocess.Popen(
+            command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,
+            universal_newlines=True
+        )
+
+
+        if process.stdout:
+            for line in iter(process.stdout.readline, ''):
+                print(line)
+                output_queue.put(str(process_number) + ': ' + line)
+        else:
+             output_queue.put(f"{process_number} Error")
+
+        process.wait()
+        output_queue.put(f"{process_number}: finished, code {process.returncode}")
+        print(f"{process_number} : finished, code {process.returncode}")
+
+    except FileNotFoundError:
+        print(f"{process_number} error: '{PATH_TO_SYSBENCH}' not found", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        print(f"{process_number} error: {e}", file=sys.stderr)
+        sys.exit(1)
 
 
 # функция для записи логов из очереди в файл
@@ -26,9 +66,9 @@ def log_writer(output_queue, log_file_path):
     try:
         with open(log_file_path, "w", encoding="utf-8") as log_f:
             
-            log_f.write(f"~~~--- Starting CPU Test Log file ---~~~")
-            log_f.write(f"Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}")
-            log_f.write("-" * 10)
+            log_f.write(f"~~~--- Starting CPU Test Log file ---~~~\n")
+            log_f.write(f"Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+            log_f.write("-" * 10,'\n')
             while True:
                 try:
                     # Получаем сообщение из очереди
@@ -113,12 +153,31 @@ def main():
     for i in range(args.num_threads):
         process = multiprocessing.Process(
             target=run_single_sysbench,
-            args=(args.time, args.report_interval, output_queue, i)
+            args=(args.time, args.report_interval, output_queue, i, PATH_TO_SYSBENCH)
         )
         processes.append(process)
         process.start()
-        time.sleep(0.01)
 
+        time.sleep(0.05)
+
+    # Ждем завершения всех процессов sysbench
+    for process in processes:
+        process.join()
+
+    # Сигнализируем потоку логгера, что пора завершаться
+    output_queue.put(None)
+    log_thread.join() # Ждем, пока логгер допишет все из очереди
+
+    end_time = time.time()
+    print("-" * 40)
+    print(f"All {args.num_threads} sysbench instances finished.")
+    print(f"Total execution time: {end_time - start_time:.2f} seconds.")
+    print(f"Log file created at: {os.path.abspath(args.log_file)}")
+
+    if args.graph:
+        print("Graphing functionality is not implemented in this version.")
+        # Сюда можно будет добавить вызов функции для построения графика
+        # на основе данных из args.log_file
 
 
 if __name__ == "__main__":
