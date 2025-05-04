@@ -7,7 +7,7 @@ GRAPH_SCRIPT="graph.py"
 LOG_FILE="sysbench_cpu_report.log"
 CSV_FILE="report.csv"
 GRAPH_FILE="graph.png"
-
+REPORT_INTERVAL=5
 
 if [[ $# -ne 2 ]]; then
   echo "Error: Incorrect number of arguments" >&2
@@ -36,6 +36,7 @@ backup_file() {
     if [[ ! -e "$backup_name" ]]; then
       echo "Renaming '$base_filename' to '$backup_name'"
       mv "$base_filename" "$backup_name"
+      return 0
     fi
     ((i++))
   done
@@ -56,7 +57,7 @@ echo ' '
 echo ' '
 
 # ПРО SUDO НЕ ЗАБЫВАЕМ
-if sudo python3 "$MAIN_SCRIPT" --num-threads="$NUM_THREADS" --time="$TEST_TIME" --log-file="$LOG_FILE"; then
+if sudo python3 "$MAIN_SCRIPT" --num-threads="$NUM_THREADS" --time="$TEST_TIME" --log-file="$LOG_FILE" --report-interval="$REPORT_INTERVAL"; then
   echo "benchmark completed successfully."
 else
   echo "Error: benchmark failed." >&2
