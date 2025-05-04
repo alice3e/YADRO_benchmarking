@@ -1,0 +1,206 @@
+--- Starting CPU Test Log file ---
+Timestamp: 2025-05-05 01:27:35
+----------
+process starting0: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+0: 
+0: Running the test with following options:
+0: Number of threads: 1
+0: Report intermediate results every 5 second(s)
+0: Initializing random number generator from current time
+0: 
+0: 
+0: Prime numbers limit: 50000
+0: 
+0: Initializing worker threads...
+0: 
+0: Threads started!
+0: 
+process starting1: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+1: 
+1: Running the test with following options:
+1: Number of threads: 1
+1: Report intermediate results every 5 second(s)
+1: Initializing random number generator from current time
+1: 
+1: 
+1: Prime numbers limit: 50000
+1: 
+1: Initializing worker threads...
+1: 
+1: Threads started!
+1: 
+process starting2: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+2: 
+2: Running the test with following options:
+2: Number of threads: 1
+2: Report intermediate results every 5 second(s)
+2: Initializing random number generator from current time
+2: 
+2: 
+2: Prime numbers limit: 50000
+2: 
+2: Initializing worker threads...
+2: 
+2: Threads started!
+2: 
+0: [ 5s ] thds: 1 eps: 14716439.36 lat (ms,95%): 0.00
+1: [ 5s ] thds: 1 eps: 14723775.28 lat (ms,95%): 0.00
+2: [ 5s ] thds: 1 eps: 14716925.18 lat (ms,95%): 0.00
+0: [ 10s ] thds: 1 eps: 14809191.07 lat (ms,95%): 0.00
+1: [ 10s ] thds: 1 eps: 14808313.77 lat (ms,95%): 0.00
+2: [ 10s ] thds: 1 eps: 14806237.70 lat (ms,95%): 0.00
+0: [ 15s ] thds: 1 eps: 14646661.71 lat (ms,95%): 0.00
+1: [ 15s ] thds: 1 eps: 14653391.79 lat (ms,95%): 0.00
+2: [ 15s ] thds: 1 eps: 14658230.33 lat (ms,95%): 0.00
+0: [ 20s ] thds: 1 eps: 14756889.67 lat (ms,95%): 0.00
+1: [ 20s ] thds: 1 eps: 14773921.90 lat (ms,95%): 0.00
+2: [ 20s ] thds: 1 eps: 14765899.68 lat (ms,95%): 0.00
+0: [ 25s ] thds: 1 eps: 14758753.44 lat (ms,95%): 0.00
+1: [ 25s ] thds: 1 eps: 14754765.35 lat (ms,95%): 0.00
+2: [ 25s ] thds: 1 eps: 14767166.63 lat (ms,95%): 0.00
+0: [ 30s ] thds: 1 eps: 14756167.77 lat (ms,95%): 0.00
+1: [ 30s ] thds: 1 eps: 14738579.60 lat (ms,95%): 0.00
+2: [ 30s ] thds: 1 eps: 14736309.41 lat (ms,95%): 0.00
+0: [ 35s ] thds: 1 eps: 14773375.81 lat (ms,95%): 0.00
+1: [ 35s ] thds: 1 eps: 14764767.53 lat (ms,95%): 0.00
+2: [ 35s ] thds: 1 eps: 14763366.92 lat (ms,95%): 0.00
+0: [ 40s ] thds: 1 eps: 14832621.94 lat (ms,95%): 0.00
+1: [ 40s ] thds: 1 eps: 14834824.31 lat (ms,95%): 0.00
+2: [ 40s ] thds: 1 eps: 14837225.09 lat (ms,95%): 0.00
+0: [ 45s ] thds: 1 eps: 14650338.79 lat (ms,95%): 0.00
+1: [ 45s ] thds: 1 eps: 14630014.76 lat (ms,95%): 0.00
+2: [ 45s ] thds: 1 eps: 14656899.73 lat (ms,95%): 0.00
+0: [ 50s ] thds: 1 eps: 14749206.37 lat (ms,95%): 0.00
+1: [ 50s ] thds: 1 eps: 14742556.01 lat (ms,95%): 0.00
+2: [ 50s ] thds: 1 eps: 14750780.75 lat (ms,95%): 0.00
+0: [ 55s ] thds: 1 eps: 14761524.22 lat (ms,95%): 0.00
+1: [ 55s ] thds: 1 eps: 14764452.35 lat (ms,95%): 0.00
+2: [ 55s ] thds: 1 eps: 14755569.93 lat (ms,95%): 0.00
+0: [ 60s ] thds: 1 eps: 14341682.25 lat (ms,95%): 0.00
+1: [ 60s ] thds: 1 eps: 14328208.09 lat (ms,95%): 0.00
+2: [ 60s ] thds: 1 eps: 14312119.71 lat (ms,95%): 0.00
+0: [ 65s ] thds: 1 eps: 14542413.69 lat (ms,95%): 0.00
+1: [ 65s ] thds: 1 eps: 14553776.43 lat (ms,95%): 0.00
+2: [ 65s ] thds: 1 eps: 14554457.97 lat (ms,95%): 0.00
+0: [ 70s ] thds: 1 eps: 14727453.17 lat (ms,95%): 0.00
+1: [ 70s ] thds: 1 eps: 14737493.36 lat (ms,95%): 0.00
+2: [ 70s ] thds: 1 eps: 14731922.71 lat (ms,95%): 0.00
+0: [ 75s ] thds: 1 eps: 14747213.99 lat (ms,95%): 0.00
+1: [ 75s ] thds: 1 eps: 14769401.62 lat (ms,95%): 0.00
+2: [ 75s ] thds: 1 eps: 14743407.61 lat (ms,95%): 0.00
+0: [ 80s ] thds: 1 eps: 14755205.30 lat (ms,95%): 0.00
+1: [ 80s ] thds: 1 eps: 14768009.69 lat (ms,95%): 0.00
+2: [ 80s ] thds: 1 eps: 14768745.42 lat (ms,95%): 0.00
+0: [ 85s ] thds: 1 eps: 14760492.41 lat (ms,95%): 0.00
+1: [ 85s ] thds: 1 eps: 14760824.86 lat (ms,95%): 0.00
+2: [ 85s ] thds: 1 eps: 14763137.02 lat (ms,95%): 0.00
+0: [ 90s ] thds: 1 eps: 14579930.79 lat (ms,95%): 0.00
+1: [ 90s ] thds: 1 eps: 14578881.89 lat (ms,95%): 0.00
+2: [ 90s ] thds: 1 eps: 14582576.36 lat (ms,95%): 0.00
+0: [ 95s ] thds: 1 eps: 14634940.85 lat (ms,95%): 0.00
+1: [ 95s ] thds: 1 eps: 14639525.25 lat (ms,95%): 0.00
+2: [ 95s ] thds: 1 eps: 14643695.06 lat (ms,95%): 0.00
+0: [ 100s ] thds: 1 eps: 14788988.61 lat (ms,95%): 0.00
+1: [ 100s ] thds: 1 eps: 14776019.64 lat (ms,95%): 0.00
+2: [ 100s ] thds: 1 eps: 14769158.48 lat (ms,95%): 0.00
+0: [ 105s ] thds: 1 eps: 14832866.40 lat (ms,95%): 0.00
+1: [ 105s ] thds: 1 eps: 14836840.06 lat (ms,95%): 0.00
+2: [ 105s ] thds: 1 eps: 14840075.00 lat (ms,95%): 0.00
+0: [ 110s ] thds: 1 eps: 14757120.05 lat (ms,95%): 0.00
+1: [ 110s ] thds: 1 eps: 14746500.33 lat (ms,95%): 0.00
+2: [ 110s ] thds: 1 eps: 14763923.03 lat (ms,95%): 0.00
+0: [ 115s ] thds: 1 eps: 14766374.74 lat (ms,95%): 0.00
+1: [ 115s ] thds: 1 eps: 14754929.04 lat (ms,95%): 0.00
+2: [ 115s ] thds: 1 eps: 14770448.24 lat (ms,95%): 0.00
+0: [ 120s ] thds: 1 eps: 14763837.55 lat (ms,95%): 0.00
+1: [ 120s ] thds: 1 eps: 14753997.72 lat (ms,95%): 0.00
+2: [ 120s ] thds: 1 eps: 14785080.48 lat (ms,95%): 0.00
+0: [ 125s ] thds: 1 eps: 14655272.31 lat (ms,95%): 0.00
+1: [ 125s ] thds: 1 eps: 14644580.09 lat (ms,95%): 0.00
+2: [ 125s ] thds: 1 eps: 14655736.69 lat (ms,95%): 0.00
+0: [ 130s ] thds: 1 eps: 14626254.55 lat (ms,95%): 0.00
+1: [ 130s ] thds: 1 eps: 14630046.08 lat (ms,95%): 0.00
+2: [ 130s ] thds: 1 eps: 14631473.56 lat (ms,95%): 0.00
+0: [ 135s ] thds: 1 eps: 14682174.73 lat (ms,95%): 0.00
+1: [ 135s ] thds: 1 eps: 14671391.10 lat (ms,95%): 0.00
+2: [ 135s ] thds: 1 eps: 14681096.12 lat (ms,95%): 0.00
+0: [ 140s ] thds: 1 eps: 14774489.01 lat (ms,95%): 0.00
+1: [ 140s ] thds: 1 eps: 14762394.76 lat (ms,95%): 0.00
+2: [ 140s ] thds: 1 eps: 14779650.22 lat (ms,95%): 0.00
+0: [ 145s ] thds: 1 eps: 14840978.00 lat (ms,95%): 0.00
+1: [ 145s ] thds: 1 eps: 14840591.10 lat (ms,95%): 0.00
+2: [ 145s ] thds: 1 eps: 14839703.64 lat (ms,95%): 0.00
+0: [ 150s ] thds: 1 eps: 14749229.82 lat (ms,95%): 0.00
+1: [ 150s ] thds: 1 eps: 14747868.25 lat (ms,95%): 0.00
+2: [ 150s ] thds: 1 eps: 14733824.00 lat (ms,95%): 0.00
+0: [ 155s ] thds: 1 eps: 14596659.85 lat (ms,95%): 0.00
+1: [ 155s ] thds: 1 eps: 14604254.72 lat (ms,95%): 0.00
+2: [ 155s ] thds: 1 eps: 14610708.78 lat (ms,95%): 0.00
+0: [ 160s ] thds: 1 eps: 14754449.80 lat (ms,95%): 0.00
+1: [ 160s ] thds: 1 eps: 14762409.57 lat (ms,95%): 0.00
+2: [ 160s ] thds: 1 eps: 14762160.46 lat (ms,95%): 0.00
+0: [ 165s ] thds: 1 eps: 14766533.35 lat (ms,95%): 0.00
+1: [ 165s ] thds: 1 eps: 14766356.43 lat (ms,95%): 0.00
+2: [ 165s ] thds: 1 eps: 14766786.38 lat (ms,95%): 0.00
+0: [ 170s ] thds: 1 eps: 14765997.66 lat (ms,95%): 0.00
+1: [ 170s ] thds: 1 eps: 14764751.74 lat (ms,95%): 0.00
+2: [ 170s ] thds: 1 eps: 14768116.33 lat (ms,95%): 0.00
+0: [ 175s ] thds: 1 eps: 14816617.36 lat (ms,95%): 0.00
+1: [ 175s ] thds: 1 eps: 14814560.35 lat (ms,95%): 0.00
+2: [ 175s ] thds: 1 eps: 14815626.04 lat (ms,95%): 0.00
+0: CPU speed:
+0:     events per second: 14718794.88
+0: 
+0: General statistics:
+0:     total time:                          180.0001s
+0:     total number of events:              2649386906
+0: 
+0: Latency (ms):
+0:          min:                                    0.00
+0:          avg:                                    0.00
+0:          max:                                   11.54
+0:          95th percentile:                        0.00
+0:          sum:                                58287.04
+0: 
+0: Threads fairness:
+0:     events (avg/stddev):           2649386906.0000/0.00
+0:     execution time (avg/stddev):   58.2870/0.00
+0: 
+0: finished, code 01: CPU speed:
+1:     events per second: 14717707.48
+1: 
+1: General statistics:
+1:     total time:                          180.0001s
+1:     total number of events:              2649190776
+1: 
+1: Latency (ms):
+1:          min:                                    0.00
+1:          avg:                                    0.00
+1:          max:                                    9.22
+1:          95th percentile:                        0.00
+1:          sum:                                56138.05
+1: 
+1: Threads fairness:
+1:     events (avg/stddev):           2649190776.0000/0.00
+1:     execution time (avg/stddev):   56.1381/0.00
+1: 
+1: finished, code 02: CPU speed:
+2:     events per second: 14720378.67
+2: 
+2: General statistics:
+2:     total time:                          180.0001s
+2:     total number of events:              2649671693
+2: 
+2: Latency (ms):
+2:          min:                                    0.00
+2:          avg:                                    0.00
+2:          max:                                   11.35
+2:          95th percentile:                        0.00
+2:          sum:                                58614.30
+2: 
+2: Threads fairness:
+2:     events (avg/stddev):           2649671693.0000/0.00
+2:     execution time (avg/stddev):   58.6143/0.00
+2: 
+2: finished, code 0--------------------
+--- End Sysbench CPU Test Log ---

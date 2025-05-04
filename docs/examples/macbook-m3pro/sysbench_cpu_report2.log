@@ -1,0 +1,408 @@
+--- Starting CPU Test Log file ---
+Timestamp: 2025-05-05 01:21:15
+----------
+process starting0: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+0: 
+0: Running the test with following options:
+0: Number of threads: 1
+0: Report intermediate results every 5 second(s)
+0: Initializing random number generator from current time
+0: 
+0: 
+0: Prime numbers limit: 50000
+0: 
+0: Initializing worker threads...
+0: 
+0: Threads started!
+0: 
+process starting1: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+1: 
+1: Running the test with following options:
+1: Number of threads: 1
+1: Report intermediate results every 5 second(s)
+1: Initializing random number generator from current time
+1: 
+1: 
+1: Prime numbers limit: 50000
+1: 
+1: Initializing worker threads...
+1: 
+1: Threads started!
+1: 
+process starting2: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+2: 
+2: Running the test with following options:
+2: Number of threads: 1
+2: Report intermediate results every 5 second(s)
+2: Initializing random number generator from current time
+2: 
+2: 
+2: Prime numbers limit: 50000
+2: 
+2: Initializing worker threads...
+2: 
+2: Threads started!
+2: 
+process starting3: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+3: 
+3: Running the test with following options:
+3: Number of threads: 1
+3: Report intermediate results every 5 second(s)
+3: Initializing random number generator from current time
+3: 
+3: 
+3: Prime numbers limit: 50000
+3: 
+3: Initializing worker threads...
+3: 
+3: Threads started!
+3: 
+process starting4: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+4: 
+4: Running the test with following options:
+4: Number of threads: 1
+4: Report intermediate results every 5 second(s)
+4: Initializing random number generator from current time
+4: 
+4: 
+4: Prime numbers limit: 50000
+4: 
+4: Initializing worker threads...
+4: 
+4: Threads started!
+4: 
+process starting5: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+5: 
+5: Running the test with following options:
+5: Number of threads: 1
+5: Report intermediate results every 5 second(s)
+5: Initializing random number generator from current time
+5: 
+5: 
+5: Prime numbers limit: 50000
+5: 
+5: Initializing worker threads...
+5: 
+5: Threads started!
+5: 
+0: [ 5s ] thds: 1 eps: 9785031.42 lat (ms,95%): 0.00
+1: [ 5s ] thds: 1 eps: 9751729.78 lat (ms,95%): 0.00
+2: [ 5s ] thds: 1 eps: 9663491.16 lat (ms,95%): 0.00
+3: [ 5s ] thds: 1 eps: 9669760.84 lat (ms,95%): 0.00
+4: [ 5s ] thds: 1 eps: 9642973.09 lat (ms,95%): 0.00
+5: [ 5s ] thds: 1 eps: 9536726.07 lat (ms,95%): 0.00
+0: [ 10s ] thds: 1 eps: 10587063.80 lat (ms,95%): 0.00
+1: [ 10s ] thds: 1 eps: 10597037.39 lat (ms,95%): 0.00
+2: [ 10s ] thds: 1 eps: 10588931.11 lat (ms,95%): 0.00
+3: [ 10s ] thds: 1 eps: 10644499.31 lat (ms,95%): 0.00
+4: [ 10s ] thds: 1 eps: 10610083.84 lat (ms,95%): 0.00
+5: [ 10s ] thds: 1 eps: 10626785.07 lat (ms,95%): 0.00
+0: [ 15s ] thds: 1 eps: 10898428.65 lat (ms,95%): 0.00
+1: [ 15s ] thds: 1 eps: 10929571.29 lat (ms,95%): 0.00
+2: [ 15s ] thds: 1 eps: 10898198.42 lat (ms,95%): 0.00
+3: [ 15s ] thds: 1 eps: 10922128.29 lat (ms,95%): 0.00
+4: [ 15s ] thds: 1 eps: 10925978.52 lat (ms,95%): 0.00
+5: [ 15s ] thds: 1 eps: 10986074.36 lat (ms,95%): 0.00
+0: [ 20s ] thds: 1 eps: 10631267.07 lat (ms,95%): 0.00
+1: [ 20s ] thds: 1 eps: 10626815.39 lat (ms,95%): 0.00
+2: [ 20s ] thds: 1 eps: 10647845.99 lat (ms,95%): 0.00
+3: [ 20s ] thds: 1 eps: 10639389.18 lat (ms,95%): 0.00
+4: [ 20s ] thds: 1 eps: 10616838.46 lat (ms,95%): 0.00
+5: [ 20s ] thds: 1 eps: 10595845.97 lat (ms,95%): 0.00
+0: [ 25s ] thds: 1 eps: 10690949.24 lat (ms,95%): 0.00
+1: [ 25s ] thds: 1 eps: 10727901.17 lat (ms,95%): 0.00
+2: [ 25s ] thds: 1 eps: 10694788.31 lat (ms,95%): 0.00
+3: [ 25s ] thds: 1 eps: 10638114.87 lat (ms,95%): 0.00
+4: [ 25s ] thds: 1 eps: 10705612.18 lat (ms,95%): 0.00
+5: [ 25s ] thds: 1 eps: 10673624.78 lat (ms,95%): 0.00
+0: [ 30s ] thds: 1 eps: 10712170.68 lat (ms,95%): 0.00
+1: [ 30s ] thds: 1 eps: 10689398.10 lat (ms,95%): 0.00
+2: [ 30s ] thds: 1 eps: 10661646.73 lat (ms,95%): 0.00
+3: [ 30s ] thds: 1 eps: 10725752.11 lat (ms,95%): 0.00
+4: [ 30s ] thds: 1 eps: 10733714.61 lat (ms,95%): 0.00
+5: [ 30s ] thds: 1 eps: 10799443.18 lat (ms,95%): 0.00
+0: [ 35s ] thds: 1 eps: 11091192.82 lat (ms,95%): 0.00
+1: [ 35s ] thds: 1 eps: 11097457.12 lat (ms,95%): 0.00
+2: [ 35s ] thds: 1 eps: 11142142.88 lat (ms,95%): 0.00
+3: [ 35s ] thds: 1 eps: 11095784.49 lat (ms,95%): 0.00
+4: [ 35s ] thds: 1 eps: 11137936.48 lat (ms,95%): 0.00
+5: [ 35s ] thds: 1 eps: 11139639.57 lat (ms,95%): 0.00
+0: [ 40s ] thds: 1 eps: 10621695.59 lat (ms,95%): 0.00
+1: [ 40s ] thds: 1 eps: 10719208.24 lat (ms,95%): 0.00
+2: [ 40s ] thds: 1 eps: 10628213.23 lat (ms,95%): 0.00
+3: [ 40s ] thds: 1 eps: 10677573.34 lat (ms,95%): 0.00
+4: [ 40s ] thds: 1 eps: 10624566.87 lat (ms,95%): 0.00
+5: [ 40s ] thds: 1 eps: 10632111.38 lat (ms,95%): 0.00
+0: [ 45s ] thds: 1 eps: 10500198.02 lat (ms,95%): 0.00
+1: [ 45s ] thds: 1 eps: 10607643.69 lat (ms,95%): 0.00
+2: [ 45s ] thds: 1 eps: 10565792.64 lat (ms,95%): 0.00
+3: [ 45s ] thds: 1 eps: 10547984.38 lat (ms,95%): 0.00
+4: [ 45s ] thds: 1 eps: 10586845.26 lat (ms,95%): 0.00
+5: [ 45s ] thds: 1 eps: 10511073.74 lat (ms,95%): 0.00
+0: [ 50s ] thds: 1 eps: 10000247.27 lat (ms,95%): 0.00
+1: [ 50s ] thds: 1 eps: 10120014.73 lat (ms,95%): 0.00
+2: [ 50s ] thds: 1 eps: 10049818.93 lat (ms,95%): 0.00
+3: [ 50s ] thds: 1 eps: 10000533.07 lat (ms,95%): 0.00
+4: [ 50s ] thds: 1 eps: 10000787.02 lat (ms,95%): 0.00
+5: [ 50s ] thds: 1 eps: 9992455.20 lat (ms,95%): 0.00
+0: [ 55s ] thds: 1 eps: 9083531.10 lat (ms,95%): 0.00
+1: [ 55s ] thds: 1 eps: 9083001.36 lat (ms,95%): 0.00
+2: [ 55s ] thds: 1 eps: 9073030.96 lat (ms,95%): 0.00
+3: [ 55s ] thds: 1 eps: 9099248.59 lat (ms,95%): 0.00
+4: [ 55s ] thds: 1 eps: 9105560.87 lat (ms,95%): 0.00
+5: [ 55s ] thds: 1 eps: 9106293.56 lat (ms,95%): 0.00
+0: [ 60s ] thds: 1 eps: 9099580.52 lat (ms,95%): 0.00
+1: [ 60s ] thds: 1 eps: 9111580.48 lat (ms,95%): 0.00
+2: [ 60s ] thds: 1 eps: 9161939.12 lat (ms,95%): 0.00
+3: [ 60s ] thds: 1 eps: 9138159.46 lat (ms,95%): 0.00
+4: [ 60s ] thds: 1 eps: 9080346.54 lat (ms,95%): 0.00
+5: [ 60s ] thds: 1 eps: 9120580.82 lat (ms,95%): 0.00
+0: [ 65s ] thds: 1 eps: 9145855.38 lat (ms,95%): 0.00
+1: [ 65s ] thds: 1 eps: 9122415.92 lat (ms,95%): 0.00
+2: [ 65s ] thds: 1 eps: 9046594.77 lat (ms,95%): 0.00
+3: [ 65s ] thds: 1 eps: 9116152.12 lat (ms,95%): 0.00
+4: [ 65s ] thds: 1 eps: 9143077.27 lat (ms,95%): 0.00
+5: [ 65s ] thds: 1 eps: 9153766.22 lat (ms,95%): 0.00
+0: [ 70s ] thds: 1 eps: 9013459.01 lat (ms,95%): 0.00
+1: [ 70s ] thds: 1 eps: 9035233.76 lat (ms,95%): 0.00
+2: [ 70s ] thds: 1 eps: 9007719.19 lat (ms,95%): 0.00
+3: [ 70s ] thds: 1 eps: 8983627.74 lat (ms,95%): 0.00
+4: [ 70s ] thds: 1 eps: 9002301.52 lat (ms,95%): 0.00
+5: [ 70s ] thds: 1 eps: 8988933.57 lat (ms,95%): 0.00
+0: [ 75s ] thds: 1 eps: 9426141.73 lat (ms,95%): 0.00
+1: [ 75s ] thds: 1 eps: 9394065.32 lat (ms,95%): 0.00
+2: [ 75s ] thds: 1 eps: 9414568.11 lat (ms,95%): 0.00
+3: [ 75s ] thds: 1 eps: 9408278.11 lat (ms,95%): 0.00
+4: [ 75s ] thds: 1 eps: 9394122.55 lat (ms,95%): 0.00
+5: [ 75s ] thds: 1 eps: 9405059.82 lat (ms,95%): 0.00
+0: [ 80s ] thds: 1 eps: 8888370.74 lat (ms,95%): 0.00
+1: [ 80s ] thds: 1 eps: 8928604.46 lat (ms,95%): 0.00
+2: [ 80s ] thds: 1 eps: 8896504.31 lat (ms,95%): 0.00
+3: [ 80s ] thds: 1 eps: 8976085.29 lat (ms,95%): 0.00
+4: [ 80s ] thds: 1 eps: 8928972.09 lat (ms,95%): 0.00
+5: [ 80s ] thds: 1 eps: 8884535.89 lat (ms,95%): 0.00
+0: [ 85s ] thds: 1 eps: 8915817.12 lat (ms,95%): 0.00
+1: [ 85s ] thds: 1 eps: 8899932.06 lat (ms,95%): 0.00
+2: [ 85s ] thds: 1 eps: 8889421.73 lat (ms,95%): 0.00
+3: [ 85s ] thds: 1 eps: 8869043.20 lat (ms,95%): 0.00
+4: [ 85s ] thds: 1 eps: 8905050.80 lat (ms,95%): 0.00
+5: [ 85s ] thds: 1 eps: 8932215.69 lat (ms,95%): 0.00
+0: [ 90s ] thds: 1 eps: 9269595.13 lat (ms,95%): 0.00
+1: [ 90s ] thds: 1 eps: 9290249.94 lat (ms,95%): 0.00
+2: [ 90s ] thds: 1 eps: 9301857.27 lat (ms,95%): 0.00
+3: [ 90s ] thds: 1 eps: 9321055.10 lat (ms,95%): 0.00
+4: [ 90s ] thds: 1 eps: 9329112.95 lat (ms,95%): 0.00
+5: [ 90s ] thds: 1 eps: 9316119.28 lat (ms,95%): 0.00
+0: [ 95s ] thds: 1 eps: 9174361.33 lat (ms,95%): 0.00
+1: [ 95s ] thds: 1 eps: 9177382.39 lat (ms,95%): 0.00
+2: [ 95s ] thds: 1 eps: 9165686.92 lat (ms,95%): 0.00
+3: [ 95s ] thds: 1 eps: 9156175.56 lat (ms,95%): 0.00
+4: [ 95s ] thds: 1 eps: 9147310.30 lat (ms,95%): 0.00
+5: [ 95s ] thds: 1 eps: 9182174.27 lat (ms,95%): 0.00
+0: [ 100s ] thds: 1 eps: 9996039.38 lat (ms,95%): 0.00
+1: [ 100s ] thds: 1 eps: 10037570.63 lat (ms,95%): 0.00
+2: [ 100s ] thds: 1 eps: 9959743.12 lat (ms,95%): 0.00
+3: [ 100s ] thds: 1 eps: 10030033.22 lat (ms,95%): 0.00
+4: [ 100s ] thds: 1 eps: 10093466.14 lat (ms,95%): 0.00
+5: [ 100s ] thds: 1 eps: 10050423.84 lat (ms,95%): 0.00
+0: [ 105s ] thds: 1 eps: 9221156.86 lat (ms,95%): 0.00
+1: [ 105s ] thds: 1 eps: 9196803.21 lat (ms,95%): 0.00
+2: [ 105s ] thds: 1 eps: 9186680.93 lat (ms,95%): 0.00
+3: [ 105s ] thds: 1 eps: 9166458.05 lat (ms,95%): 0.00
+4: [ 105s ] thds: 1 eps: 9165872.53 lat (ms,95%): 0.00
+5: [ 105s ] thds: 1 eps: 9142337.82 lat (ms,95%): 0.00
+0: [ 110s ] thds: 1 eps: 10425578.92 lat (ms,95%): 0.00
+1: [ 110s ] thds: 1 eps: 10444913.41 lat (ms,95%): 0.00
+2: [ 110s ] thds: 1 eps: 10382460.71 lat (ms,95%): 0.00
+3: [ 110s ] thds: 1 eps: 10481864.71 lat (ms,95%): 0.00
+4: [ 110s ] thds: 1 eps: 10506087.84 lat (ms,95%): 0.00
+5: [ 110s ] thds: 1 eps: 10472477.94 lat (ms,95%): 0.00
+0: [ 115s ] thds: 1 eps: 10208417.33 lat (ms,95%): 0.00
+1: [ 115s ] thds: 1 eps: 10168495.97 lat (ms,95%): 0.00
+2: [ 115s ] thds: 1 eps: 10146911.28 lat (ms,95%): 0.00
+3: [ 115s ] thds: 1 eps: 10100167.47 lat (ms,95%): 0.00
+4: [ 115s ] thds: 1 eps: 10166929.24 lat (ms,95%): 0.00
+5: [ 115s ] thds: 1 eps: 10179765.47 lat (ms,95%): 0.00
+0: [ 120s ] thds: 1 eps: 9912462.11 lat (ms,95%): 0.00
+1: [ 120s ] thds: 1 eps: 9885009.69 lat (ms,95%): 0.00
+2: [ 120s ] thds: 1 eps: 9842294.68 lat (ms,95%): 0.00
+3: [ 120s ] thds: 1 eps: 9855390.34 lat (ms,95%): 0.00
+4: [ 120s ] thds: 1 eps: 9834163.90 lat (ms,95%): 0.00
+5: [ 120s ] thds: 1 eps: 9827073.95 lat (ms,95%): 0.00
+0: [ 125s ] thds: 1 eps: 9717135.15 lat (ms,95%): 0.00
+1: [ 125s ] thds: 1 eps: 9710785.97 lat (ms,95%): 0.00
+2: [ 125s ] thds: 1 eps: 9759306.40 lat (ms,95%): 0.00
+3: [ 125s ] thds: 1 eps: 9730107.29 lat (ms,95%): 0.00
+4: [ 125s ] thds: 1 eps: 9665661.21 lat (ms,95%): 0.00
+5: [ 125s ] thds: 1 eps: 9666770.49 lat (ms,95%): 0.00
+0: [ 130s ] thds: 1 eps: 8927310.63 lat (ms,95%): 0.00
+1: [ 130s ] thds: 1 eps: 8929239.16 lat (ms,95%): 0.00
+2: [ 130s ] thds: 1 eps: 8937518.51 lat (ms,95%): 0.00
+3: [ 130s ] thds: 1 eps: 8958209.86 lat (ms,95%): 0.00
+4: [ 130s ] thds: 1 eps: 9020777.16 lat (ms,95%): 0.00
+5: [ 130s ] thds: 1 eps: 8990725.80 lat (ms,95%): 0.00
+0: [ 135s ] thds: 1 eps: 8974064.52 lat (ms,95%): 0.00
+1: [ 135s ] thds: 1 eps: 8960518.58 lat (ms,95%): 0.00
+2: [ 135s ] thds: 1 eps: 8920402.07 lat (ms,95%): 0.00
+3: [ 135s ] thds: 1 eps: 8888304.95 lat (ms,95%): 0.00
+4: [ 135s ] thds: 1 eps: 8897310.52 lat (ms,95%): 0.00
+5: [ 135s ] thds: 1 eps: 8888995.42 lat (ms,95%): 0.00
+0: [ 140s ] thds: 1 eps: 8960982.16 lat (ms,95%): 0.00
+1: [ 140s ] thds: 1 eps: 8955244.57 lat (ms,95%): 0.00
+2: [ 140s ] thds: 1 eps: 8988123.68 lat (ms,95%): 0.00
+3: [ 140s ] thds: 1 eps: 9036430.10 lat (ms,95%): 0.00
+4: [ 140s ] thds: 1 eps: 9018231.74 lat (ms,95%): 0.00
+5: [ 140s ] thds: 1 eps: 9058813.65 lat (ms,95%): 0.00
+0: [ 145s ] thds: 1 eps: 8966754.76 lat (ms,95%): 0.00
+1: [ 145s ] thds: 1 eps: 8996065.54 lat (ms,95%): 0.00
+2: [ 145s ] thds: 1 eps: 9009362.84 lat (ms,95%): 0.00
+3: [ 145s ] thds: 1 eps: 9020668.59 lat (ms,95%): 0.00
+4: [ 145s ] thds: 1 eps: 8991136.70 lat (ms,95%): 0.00
+5: [ 145s ] thds: 1 eps: 8994407.02 lat (ms,95%): 0.00
+0: [ 150s ] thds: 1 eps: 9167825.86 lat (ms,95%): 0.00
+1: [ 150s ] thds: 1 eps: 9170794.65 lat (ms,95%): 0.00
+2: [ 150s ] thds: 1 eps: 9110248.56 lat (ms,95%): 0.00
+3: [ 150s ] thds: 1 eps: 9111233.46 lat (ms,95%): 0.00
+4: [ 150s ] thds: 1 eps: 9134643.60 lat (ms,95%): 0.00
+5: [ 150s ] thds: 1 eps: 9132625.48 lat (ms,95%): 0.00
+0: [ 155s ] thds: 1 eps: 9162532.52 lat (ms,95%): 0.00
+1: [ 155s ] thds: 1 eps: 9123222.53 lat (ms,95%): 0.00
+2: [ 155s ] thds: 1 eps: 9162075.96 lat (ms,95%): 0.00
+3: [ 155s ] thds: 1 eps: 9157851.44 lat (ms,95%): 0.00
+4: [ 155s ] thds: 1 eps: 9154401.68 lat (ms,95%): 0.00
+5: [ 155s ] thds: 1 eps: 9138939.44 lat (ms,95%): 0.00
+0: [ 160s ] thds: 1 eps: 9452454.42 lat (ms,95%): 0.00
+1: [ 160s ] thds: 1 eps: 9477917.06 lat (ms,95%): 0.00
+2: [ 160s ] thds: 1 eps: 9427246.00 lat (ms,95%): 0.00
+3: [ 160s ] thds: 1 eps: 9399447.75 lat (ms,95%): 0.00
+4: [ 160s ] thds: 1 eps: 9407129.43 lat (ms,95%): 0.00
+5: [ 160s ] thds: 1 eps: 9421671.47 lat (ms,95%): 0.00
+0: [ 165s ] thds: 1 eps: 9245290.84 lat (ms,95%): 0.00
+1: [ 165s ] thds: 1 eps: 9233792.64 lat (ms,95%): 0.00
+2: [ 165s ] thds: 1 eps: 9342393.99 lat (ms,95%): 0.00
+3: [ 165s ] thds: 1 eps: 9337729.34 lat (ms,95%): 0.00
+4: [ 165s ] thds: 1 eps: 9340924.17 lat (ms,95%): 0.00
+5: [ 165s ] thds: 1 eps: 9317458.37 lat (ms,95%): 0.00
+0: [ 170s ] thds: 1 eps: 8657572.05 lat (ms,95%): 0.00
+1: [ 170s ] thds: 1 eps: 8672313.10 lat (ms,95%): 0.00
+2: [ 170s ] thds: 1 eps: 8641331.21 lat (ms,95%): 0.00
+3: [ 170s ] thds: 1 eps: 8620152.69 lat (ms,95%): 0.00
+4: [ 170s ] thds: 1 eps: 8650479.09 lat (ms,95%): 0.00
+5: [ 170s ] thds: 1 eps: 8671998.92 lat (ms,95%): 0.00
+0: [ 175s ] thds: 1 eps: 8722391.75 lat (ms,95%): 0.00
+1: [ 175s ] thds: 1 eps: 8740465.15 lat (ms,95%): 0.00
+2: [ 175s ] thds: 1 eps: 8689258.10 lat (ms,95%): 0.00
+3: [ 175s ] thds: 1 eps: 8746829.28 lat (ms,95%): 0.00
+4: [ 175s ] thds: 1 eps: 8730516.18 lat (ms,95%): 0.00
+5: [ 175s ] thds: 1 eps: 8718788.05 lat (ms,95%): 0.00
+0: CPU speed:
+0:     events per second: 9611554.66
+0: 
+0: General statistics:
+0:     total time:                          180.0001s
+0:     total number of events:              1730082241
+0: 
+0: Latency (ms):
+0:          min:                                    0.00
+0:          avg:                                    0.00
+0:          max:                       18446744073709.55
+0:          95th percentile:                        0.00
+0:          sum:                                40372.22
+0: 
+0: Threads fairness:
+0:     events (avg/stddev):           1730082241.0000/0.00
+0:     execution time (avg/stddev):   40.3722/0.00
+0: 
+0: finished, code 01: CPU speed:
+1:     events per second: 9621372.87
+1: 
+1: General statistics:
+1:     total time:                          180.0001s
+1:     total number of events:              1731849406
+1: 
+1: Latency (ms):
+1:          min:                                    0.00
+1:          avg:                                    0.00
+1:          max:                       18446744073709.55
+1:          95th percentile:                        0.00
+1:          sum:                                40272.24
+1: 
+1: Threads fairness:
+1:     events (avg/stddev):           1731849406.0000/0.00
+1:     execution time (avg/stddev):   40.2722/0.00
+1: 
+1: finished, code 02: CPU speed:
+2:     events per second: 9606476.62
+2: 
+2: General statistics:
+2:     total time:                          180.0001s
+2:     total number of events:              1729168184
+2: 
+2: Latency (ms):
+2:          min:                                    0.00
+2:          avg:                                    0.00
+2:          max:                       18446744073709.55
+2:          95th percentile:                        0.00
+2:          sum:                                40532.45
+2: 
+2: Threads fairness:
+2:     events (avg/stddev):           1729168184.0000/0.00
+2:     execution time (avg/stddev):   40.5325/0.00
+2: 
+2: finished, code 03: CPU speed:
+3:     events per second: 9616147.16
+3: 
+3: General statistics:
+3:     total time:                          180.0001s
+3:     total number of events:              1730908384
+3: 
+3: Latency (ms):
+3:          min:                                    0.00
+3:          avg:                                    0.00
+3:          max:                       18446744073709.55
+3:          95th percentile:                        0.00
+3:          sum:                                40295.50
+3: 
+3: Threads fairness:
+3:     events (avg/stddev):           1730908384.0000/0.00
+3:     execution time (avg/stddev):   40.2955/0.00
+3: 
+3: finished, code 04: CPU speed:
+4:     events per second: 9621136.74
+4: 
+4: General statistics:
+4:     total time:                          180.0002s
+4:     total number of events:              1731807269
+4: 
+4: Latency (ms):
+4:          min:                                    0.00
+4:          avg:                                    0.00
+4:          max:                       18446744073709.55
+4:          95th percentile:                        0.00
+4:          sum:                                40321.58
+4: 
+4: Threads fairness:
+4:     events (avg/stddev):           1731807269.0000/0.00
+4:     execution time (avg/stddev):   40.3216/0.00
+4: 
+4: finished, code 05: [ 180s ] thds: 1 eps: 9047195.37 lat (ms,95%): 0.00
+5: CPU speed:
+5:     events per second: 9619506.82
+5: 
+5: General statistics:
+5:     total time:                          180.0021s
+5:     total number of events:              1731534218
+5: 
+5: Latency (ms):
+5:          min:                                    0.00
+5:          avg:                                    0.00
+5:          max:                       18446744073709.55
+5:          95th percentile:                        0.00
+5:          sum:                                40405.49
+5: 
+5: Threads fairness:
+5:     events (avg/stddev):           1731534218.0000/0.00
+5:     execution time (avg/stddev):   40.4055/0.00
+5: 
+5: finished, code 0--------------------
+--- End Sysbench CPU Test Log ---

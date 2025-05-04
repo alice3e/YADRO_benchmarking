@@ -1,0 +1,72 @@
+--- Starting CPU Test Log file ---
+Timestamp: 2025-05-05 01:32:00
+----------
+process starting0: sysbench 1.0.20 (using system LuaJIT 2.1.1727870382)
+0: 
+0: Running the test with following options:
+0: Number of threads: 1
+0: Report intermediate results every 5 second(s)
+0: Initializing random number generator from current time
+0: 
+0: 
+0: Prime numbers limit: 50000
+0: 
+0: Initializing worker threads...
+0: 
+0: Threads started!
+0: 
+0: [ 5s ] thds: 1 eps: 15753932.10 lat (ms,95%): 0.00
+0: [ 10s ] thds: 1 eps: 15699807.84 lat (ms,95%): 0.00
+0: [ 15s ] thds: 1 eps: 15576490.78 lat (ms,95%): 0.00
+0: [ 20s ] thds: 1 eps: 15536497.19 lat (ms,95%): 0.00
+0: [ 25s ] thds: 1 eps: 15468303.60 lat (ms,95%): 0.00
+0: [ 30s ] thds: 1 eps: 15434600.29 lat (ms,95%): 0.00
+0: [ 35s ] thds: 1 eps: 15516390.39 lat (ms,95%): 0.00
+0: [ 40s ] thds: 1 eps: 15425843.85 lat (ms,95%): 0.00
+0: [ 45s ] thds: 1 eps: 15327015.71 lat (ms,95%): 0.00
+0: [ 50s ] thds: 1 eps: 15418620.92 lat (ms,95%): 0.00
+0: [ 55s ] thds: 1 eps: 15438068.55 lat (ms,95%): 0.00
+0: [ 60s ] thds: 1 eps: 15500678.34 lat (ms,95%): 0.00
+0: [ 65s ] thds: 1 eps: 15391084.49 lat (ms,95%): 0.00
+0: [ 70s ] thds: 1 eps: 15316185.27 lat (ms,95%): 0.00
+0: [ 75s ] thds: 1 eps: 15292966.22 lat (ms,95%): 0.00
+0: [ 80s ] thds: 1 eps: 15392930.88 lat (ms,95%): 0.00
+0: [ 85s ] thds: 1 eps: 15380902.99 lat (ms,95%): 0.00
+0: [ 90s ] thds: 1 eps: 15458484.67 lat (ms,95%): 0.00
+0: [ 95s ] thds: 1 eps: 15328846.40 lat (ms,95%): 0.00
+0: [ 100s ] thds: 1 eps: 15375826.56 lat (ms,95%): 0.00
+0: [ 105s ] thds: 1 eps: 15297792.02 lat (ms,95%): 0.00
+0: [ 110s ] thds: 1 eps: 15370391.10 lat (ms,95%): 0.00
+0: [ 115s ] thds: 1 eps: 15394745.36 lat (ms,95%): 0.00
+0: [ 120s ] thds: 1 eps: 15366811.00 lat (ms,95%): 0.00
+0: [ 125s ] thds: 1 eps: 13766505.21 lat (ms,95%): 0.00
+0: [ 130s ] thds: 1 eps: 14167985.08 lat (ms,95%): 0.00
+0: [ 135s ] thds: 1 eps: 14750728.36 lat (ms,95%): 0.00
+0: [ 140s ] thds: 1 eps: 15101443.65 lat (ms,95%): 0.00
+0: [ 145s ] thds: 1 eps: 15092070.99 lat (ms,95%): 0.00
+0: [ 150s ] thds: 1 eps: 15159992.33 lat (ms,95%): 0.00
+0: [ 155s ] thds: 1 eps: 15175989.30 lat (ms,95%): 0.00
+0: [ 160s ] thds: 1 eps: 14832793.12 lat (ms,95%): 0.00
+0: [ 165s ] thds: 1 eps: 15216807.86 lat (ms,95%): 0.00
+0: [ 170s ] thds: 1 eps: 15019818.23 lat (ms,95%): 0.00
+0: [ 175s ] thds: 1 eps: 15372269.80 lat (ms,95%): 0.00
+0: CPU speed:
+0:     events per second: 15261830.21
+0: 
+0: General statistics:
+0:     total time:                          180.0001s
+0:     total number of events:              2747133422
+0: 
+0: Latency (ms):
+0:          min:                                    0.00
+0:          avg:                                    0.00
+0:          max:                                   14.90
+0:          95th percentile:                        0.00
+0:          sum:                                54320.14
+0: 
+0: Threads fairness:
+0:     events (avg/stddev):           2747133422.0000/0.00
+0:     execution time (avg/stddev):   54.3201/0.00
+0: 
+0: finished, code 0--------------------
+--- End Sysbench CPU Test Log ---
