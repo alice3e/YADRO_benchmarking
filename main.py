@@ -15,6 +15,11 @@ DEFAULT_REPORT_INTERVAL = 5
 DEFAULT_LOG_FILE = "sysbench_cpu_report.log"
 PATH_TO_SYSBENCH = None
 
+# функция для выполнения одного sysbench
+def run_single_sysbench(duration, report_interval, output_queue, sysbench_num):
+    print(PATH_TO_SYSBENCH)
+    
+
 
 # функция для записи логов из очереди в файл
 def log_writer(output_queue, log_file_path):
@@ -100,6 +105,20 @@ def main():
     # поток для записи логов
     log_thread = threading.Thread(target=log_writer, args=(output_queue, args.log_file))
     log_thread.start()
+
+    processes = []
+    start_time = time.time()
+
+    # Запускаем n процессов sysbench
+    for i in range(args.num_threads):
+        process = multiprocessing.Process(
+            target=run_single_sysbench,
+            args=(args.time, args.report_interval, output_queue, i)
+        )
+        processes.append(process)
+        process.start()
+        time.sleep(0.01)
+
 
 
 if __name__ == "__main__":
